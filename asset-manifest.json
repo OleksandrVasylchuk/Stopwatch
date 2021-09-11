@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/stopwatch/static/css/main.e50097b6.chunk.css",
+    "main.js": "/stopwatch/static/js/main.b052205c.chunk.js",
+    "main.js.map": "/stopwatch/static/js/main.b052205c.chunk.js.map",
+    "runtime-main.js": "/stopwatch/static/js/runtime-main.674fa27d.js",
+    "runtime-main.js.map": "/stopwatch/static/js/runtime-main.674fa27d.js.map",
+    "static/js/2.1a2ea207.chunk.js": "/stopwatch/static/js/2.1a2ea207.chunk.js",
+    "static/js/2.1a2ea207.chunk.js.map": "/stopwatch/static/js/2.1a2ea207.chunk.js.map",
+    "index.html": "/stopwatch/index.html",
+    "static/css/main.e50097b6.chunk.css.map": "/stopwatch/static/css/main.e50097b6.chunk.css.map",
+    "static/js/2.1a2ea207.chunk.js.LICENSE.txt": "/stopwatch/static/js/2.1a2ea207.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/stopwatch/static/media/—Pngtree—pink power glowing light bulb_1244200.4a974445.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.674fa27d.js",
+    "static/js/2.1a2ea207.chunk.js",
+    "static/css/main.e50097b6.chunk.css",
+    "static/js/main.b052205c.chunk.js"
+  ]
+}
