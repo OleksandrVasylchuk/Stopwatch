@@ -81,7 +81,8 @@ class StopWatch extends Component {
     this.setState({ startDisabled: false, stopDisabled: true });
   }
 
-  onButtonReset() {
+  onButtonReset = () => {
+    clearInterval(this.state.timer);
     this.setState({
       timer: null,
       hours: "00",
@@ -90,7 +91,7 @@ class StopWatch extends Component {
       startDisabled: false,
       stopDisabled: true,
     });
-  }
+  };
 
   render() {
     return (
