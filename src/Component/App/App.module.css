@@ -1,0 +1,40 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 230px;
+  width: 300px;
+}
+
+.hourse {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.containeBbuttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  width: 100px;
+  margin-left: 20px;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+
+.button:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.timer {
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
