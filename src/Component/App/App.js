@@ -61,6 +61,7 @@ class StopWatch extends Component {
   }
 
   onButtonStart() {
+    clearInterval(this.state.timer);
     this.start();
     this.setState({ startDisabled: true, stopDisabled: false });
   }
@@ -76,13 +77,13 @@ class StopWatch extends Component {
     });
   }
 
-  onButtonWait() {
+  onButtonWait = () => {
     clearInterval(this.state.timer);
     this.setState({ startDisabled: false, stopDisabled: true });
-  }
+  };
 
   onButtonReset = () => {
-    clearInterval(this.state.timer && this.start());
+    clearInterval(this.state.timer);
     this.setState({
       timer: null,
       hours: "00",
@@ -91,6 +92,8 @@ class StopWatch extends Component {
       startDisabled: false,
       stopDisabled: true,
     });
+
+    this.state.timer && this.start();
   };
 
   render() {
