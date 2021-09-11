@@ -82,7 +82,7 @@ class StopWatch extends Component {
   }
 
   onButtonReset = () => {
-    clearInterval(this.state.timer);
+    clearInterval(this.state.timer && this.start());
     this.setState({
       timer: null,
       hours: "00",
