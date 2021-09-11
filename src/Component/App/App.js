@@ -9,6 +9,7 @@ class StopWatch extends Component {
     seconds: "00",
     startDisabled: true,
     stopDisabled: false,
+    isClicked: false,
   };
 
   constructor(props) {
@@ -78,8 +79,23 @@ class StopWatch extends Component {
   }
 
   onButtonWait = () => {
-    clearInterval(this.state.timer);
-    this.setState({ startDisabled: false, stopDisabled: true });
+    if (this.state.isClicked) {
+      this.setState({
+        isClicked: false,
+        startDisabled: false,
+        stopDisabled: true,
+      });
+
+      return clearInterval(this.state.timer);
+    }
+
+    this.setState({
+      isClicked: true,
+    });
+
+    setTimeout(() => {
+      this.setState({ isClicked: false });
+    }, 300);
   };
 
   onButtonReset = () => {
@@ -129,7 +145,7 @@ class StopWatch extends Component {
           </button>
           <button
             className={s.button}
-            onDoubleClick={() => this.onButtonWait()}
+            onClick={() => this.onButtonWait()}
             title="Wait"
           >
             Wait
