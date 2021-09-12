@@ -78,7 +78,7 @@ class StopWatch extends Component {
     });
   }
 
-  onButtonWait = () => {
+  onButtonWait() {
     if (this.state.isClicked) {
       this.setState({
         isClicked: false,
@@ -96,9 +96,9 @@ class StopWatch extends Component {
     setTimeout(() => {
       this.setState({ isClicked: false });
     }, 300);
-  };
+  }
 
-  onButtonReset = () => {
+  onButtonReset() {
     clearInterval(this.state.timer);
     this.setState({
       timer: null,
@@ -110,7 +110,7 @@ class StopWatch extends Component {
     });
 
     this.state.timer && this.start();
-  };
+  }
 
   render() {
     return (
